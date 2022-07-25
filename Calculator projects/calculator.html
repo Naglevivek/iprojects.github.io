@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<script>
+function calculate(number)
+{
+   vivek.value=vivek.value+number;
+}
+function Result()
+{
+    try
+    {
+        vivek.value=eval(vivek.value)
+
+    }
+    catch(err)
+    {
+        alert("Enter the valid number");
+    }
+}
+function clr()
+{
+    vivek.value="";
+}
+function del()
+{
+    vivek.value=vivek.value.slice(0,-1);
+}
+
+</script>
+</head>
+<body>
+    <h1 class="text-center">Calculator Made by Vivek Nagle</h1>
+<div class="container bg-success d-block">
+<div class="calc mt-4 px-3 py-3 ">
+<input class="d-block mt-2" type="text" id="vivek" placeholder="0">
+<br>
+<div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark " onclick="clr()">C</button>
+  </div>
+ <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark" onclick="del()">DEL</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark" onclick="calculate('%')">%</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark" onclick="calculate('/')">/</button>
+  </div>
+  <br>
+<div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('7')">7</button>
+  </div> 
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('8')">8</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('9')">9</button>
+  </div> 
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('*')">*</button>
+  </div> 
+  <br>
+ <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('4')">4</button>
+  </div> 
+ <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('5')">5</button>
+  </div> 
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('6')">6</button>
+  </div> 
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('-')">-</button>
+  </div> 
+  <br>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('1')">1</button>
+  </div> 
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('2')">2</button>
+  </div> 
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('3')">3</button>
+  </div> 
+   <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('+')">+</button>
+  </div> 
+  <br>
+   <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('.')">.</button>
+  </div> 
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="calculate('0')">0</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button " class="btn btn-secondary rounded-circle bg-white text-dark mt-2" onclick="Result()">=</button>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
